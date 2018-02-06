@@ -31,10 +31,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## 关于router痛点
 ``` bash
 1、	如何传参？两种方法
-（1）定义路由地址:
-{ path: '/index/:id ', name: Index, component: Index}，用route-link的话, :to ='/index/123',或者this.route.push('/index/123');
+（1）定义路由地址:{ path: '/index/:id ', name: Index, component: Index}，
+  用route-link的话, :to ='/index/123',或者this.route.push('/index/123');
   有点直观简洁，适用于编辑传id的，缺点:在多参数时先得累赘。
-（2）This.route.push({ path:  ’/index’, name:  ‘Index’, params:  { id: 1234 }})，这样写可以使用this.route.params来取得参数，支持多参数
+（2）This.route.push({ path:  ’/index’, name:  ‘Index’, params:  { id: 1234 }})，
+  这样写可以使用this.route.params来取得参数，支持多参数
 ```
 ## 关于vuex
 ``` bash
