@@ -65,7 +65,7 @@ state,
 mutations,
 actions,
 getters
-在mutation_type明明各种提交数据的名字，常量用大写比较直观，在mutation中引入写一个空白的函数，action也要用到这个.
+在mutation_type命名提交数据的名字，常量用大写比较直观，在mutation中引入写一个空白的函数，action也要用到.
 接着action内写着接收view传递过来的数据，进行校验，异步请求等数据处理操作，view中使用store.dispatch()；
 简单来说，平常在vue方法中处理数据的步骤挪到action里面做了，接着用commit调起mutation，在里面做数据返回操作。
 commit=>mutations,用来触发同步操作的方法。
